@@ -1,0 +1,1 @@
+require("pgk-repo-bing")
