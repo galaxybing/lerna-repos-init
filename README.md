@@ -17,6 +17,10 @@
 ```bash
 npm install -g lerna # 全局安装工具，除了 Lerna,Builder，还可以像Andre Staltz 一样自己用脚本（通过Bash s）来实现 monorepo
 
+git init lerna-repos-init # 创建\初始化.git仓库
+
+cd lerna-repos-init
+
 lerna init # 初始化管理目录，同时之后手动配置子 package 间的调用关系：dependencies
 
 lerna bootstrap # 会为各个 package 执行 npm install 所有的外部依赖；并为内部依赖的 package 建立 symlink,对所有的 package 执行 npm prepublish 
